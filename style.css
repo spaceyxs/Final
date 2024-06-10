@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family:'Roboto Light',sans-serif ;
+}
+body{
+    background: #343434;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: #222222;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+nav .icon{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+
+}
+nav .wrapper{
+    position: absolute;
+    left:200px;
+
+}
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    padding-left: 50%;
+
+}
+nav ol li{
+    margin: 0 10px;
+
+}
+nav ol li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 25px 10px;
+}
+nav ol li a:hover{
+    background: dimgray;
+    color: black;
+}
+nav .wrapper .search_box{
+    margin: auto 0;
+    width: 400px;
+    background: white;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 10px ;
+    box-shadow: 0 8px 6px -10px dimgray;
+}
+nav .wrapper .search_box .dropdown{
+    width: 150px;
+    border-right:2px solid dimgray  ;
+    position: relative;
+    color: dimgray;
+    cursor: pointer;
+
+}
+nav .wrapper .search_box .dropdown .default_option{
+    text-transform: uppercase;
+    padding: 1px 25px;
+    font-size: 14px;
+}
+nav .wrapper .search_box .dropdown ul{
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    background: white;
+    width: 150px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 8px 8px 6px -10px;
+}
+nav .wrapper .search_box .dropdown ul li{
+    padding-bottom: 20px;
+
+}
+nav .wrapper .search_box .dropdown ul li:last-child{
+    padding-bottom: 0;
+}
+nav .wrapper .search_box .dropdown ul li:hover{
+    color: black;
+
+}
+nav .wrapper.search_box.dropdown:before{
+    content:"";
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    border: 8px solid;
+    border-color: red transparent transparent transparent;
+}
